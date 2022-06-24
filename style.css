@@ -129,7 +129,7 @@
 }
 
 .artigos h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .artigos p {
@@ -139,17 +139,51 @@
 /* Noticia */
 
 .noticia {
-    align-items: center;
-    display: flex;
-    gap: 80px;
-    padding: 80px 0;
+  align-items: center;
+  display: flex;
+  gap: 80px;
+  padding: 80px 0;
 }
 
-.noticia h3{
-    margin-bottom: 24px;
-    font-size: 24px;
+.noticia h3 {
+  margin-bottom: 24px;
+  font-size: 24px;
 }
 
 .noticia-background {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
+}
+
+/* Equipe */
+.equipe {
+  padding: 120px 0;
+}
+
+.equipe-titulos {
+  text-align: center;
+}
+
+.equipe-titulos h2 {
+  margin-bottom: 30px;
+}
+
+.equipe-titulos h3 {
+  margin-bottom: 80px;
+}
+
+.equipe-imagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.equipe-imagens img {
+  width: 168px;
+  height: 80px;
+}
+
+.equipe-imagens-wrap {
+  display: flex;
+  gap: 42px;
 }
