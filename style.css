@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27");
 
 * {
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .container {
@@ -14,19 +14,59 @@
   margin: auto;
 }
 
+/* Botões */
+
+.btn {
+  border: 1px solid #18a0fb;
+  border-radius: 6px;
+  height: 40px;
+  width: 130px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn1 {
+  background-color: #fff;
+  color: #18a0fb;
+}
+
+.btn1:hover {
+  background-color: #18a0fb;
+  color: #fff;
+}
+
+.btn2 {
+  background-color: #18a0fb;
+  color: #fff;
+}
+
+.btn2:hover {
+  background-color: #fff;
+  color: #18a0fb;
+}
+
+.btn3 {
+  height: 52px;
+  width: 192px;
+}
+
 /* Menu */
 
 .menu {
   padding: 16px;
+  display: flex;
+  background-color: #fff;
+}
+
+.menu ul {
+  display: flex;
 }
 
 .menu,
-.menu ul,
-.menu-wrap {
-  display: flex;
-  background-color: #fff;
+.menu ul {
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu-links {
@@ -39,7 +79,7 @@
   transition: 0.3s;
 }
 
-.menu-links a:hover {
+.menu-links ul a:hover {
   border-bottom: 1px solid #18a0fb;
 }
 
@@ -47,53 +87,47 @@
   gap: 40px;
 }
 
-.menu-btns button, .video button {
-  border: 1px solid #18a0fb;
-  border-radius: 6px;
-  height: 40px;
-  width: 130px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.menu-btns button:first-child {
-  background-color: #fff;
-  color: #18a0fb;
-}
-
-.menu-btns button:last-child, .video button {
-  background-color: #18a0fb;
-  color: #fff;
-}
-
-.menu-btns button:first-child:hover {
-  background-color: #18a0fb;
-  color: #fff;
-}
-
-.menu-btns button:last-child:hover, .video button:hover {
-  background-color: #fff;
-  color: #18a0fb;
-}
-
 /* Video */
 
 .video {
-    align-items: center;
-    background: url("/img/video.jpg") no-repeat center;
-    display: flex;
-    flex-direction: column;
-    height: 960px;
-    justify-content: center;
-    width: 100%;
+  align-items: center;
+  background: url("/img/video.jpg") no-repeat center;
+  display: flex;
+  flex-direction: column;
+  height: 960px;
+  justify-content: center;
+  width: 100%;
+}
+
+.video img {
+  cursor: pointer;
+  border-radius: 100%;
 }
 
 .video h1 {
-    margin: 80px 0 40px;
-    font-size: 56px;
+  margin: 80px 0 40px;
+  font-size: 56px;
 }
 
-.video button {
-    height: 52px;
-    width: 192px;
+/* Artigos */
+.artigos-titulo {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 120px 0 60px;
+}
+
+.artigos-wrap {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.artigos {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-right: 60px;
+}
+
+.artigos p {
+  margin: 24px 0 32px;
 }
