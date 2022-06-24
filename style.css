@@ -1,4 +1,20 @@
 * {
     padding: 0;
-    margin: 0
+    margin: 0;
+    box-sizing:border-box;
 }
+
+.video {
+    align-items: center;
+    background: url("/img/video.jpg") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.video img {
+    padding-bottom: 80px;
+}
+
