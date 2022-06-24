@@ -1,20 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27");
+
 * {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
 }
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+/* Menu */
+
+.menu {
+  padding: 16px;
+}
+
+.menu,
+.menu ul,
+.menu-wrap {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-links {
+  display: flex;
+  gap: 72px;
+}
+
+.menu-links a {
+  color: #18a0fb;
+  transition: 0.3s;
+}
+
+.menu-links a:hover {
+  border-bottom: 1px solid #18a0fb;
+}
+
+.menu-links ul {
+  gap: 40px;
+}
+
+.menu-btns button, .video button {
+  border: 1px solid #18a0fb;
+  border-radius: 6px;
+  height: 40px;
+  width: 130px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-btns button:first-child {
+  background-color: #fff;
+  color: #18a0fb;
+}
+
+.menu-btns button:last-child, .video button {
+  background-color: #18a0fb;
+  color: #fff;
+}
+
+.menu-btns button:first-child:hover {
+  background-color: #18a0fb;
+  color: #fff;
+}
+
+.menu-btns button:last-child:hover, .video button:hover {
+  background-color: #fff;
+  color: #18a0fb;
+}
+
+/* Video */
 
 .video {
     align-items: center;
     background: url("/img/video.jpg") no-repeat center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 960px;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 
-.video img {
-    padding-bottom: 80px;
+.video h1 {
+    margin: 80px 0 40px;
+    font-size: 56px;
 }
 
+.video button {
+    height: 52px;
+    width: 192px;
+}
