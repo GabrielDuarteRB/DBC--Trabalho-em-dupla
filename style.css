@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap%27");
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -7,6 +7,10 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
 }
 
 .container {
@@ -130,6 +134,7 @@
 
 .artigos h3 {
   font-size: 24px;
+  font-weight: bold;
 }
 
 .artigos p {
@@ -148,6 +153,7 @@
 .noticia h3 {
   margin-bottom: 24px;
   font-size: 24px;
+  font-weight: bold;
 }
 
 .noticia-background {
@@ -165,10 +171,12 @@
 
 .equipe-titulos h2 {
   margin-bottom: 30px;
+  font-size: 48px;
 }
 
 .equipe-titulos h3 {
   margin-bottom: 80px;
+  font-size: 36px;
 }
 
 .equipe-imagens {
@@ -186,4 +194,26 @@
 .equipe-imagens-wrap {
   display: flex;
   gap: 42px;
+}
+
+/* Contato */
+
+.contato {
+  background-color: #F5F5F5;
+  padding: 120px 0;
+
+}
+
+.contato div:first-child {
+  display: flex;
+  gap: 80px;
+}
+
+.contato div p {
+  font-size: 32px;
+}
+
+.contato div:last-child {
+  display: flex;
+  gap: 45px;
 }
