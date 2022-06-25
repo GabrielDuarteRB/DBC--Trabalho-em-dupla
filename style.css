@@ -60,7 +60,7 @@ h3 {
 /* Menu */
 
 .menu {
-  padding: 16px;
+  padding: 16px 0;
   background-color: #fff;
 }
 
@@ -150,6 +150,10 @@ h3 {
   display: flex;
   gap: 80px;
   padding: 80px 0;
+}
+
+.noticia-background .noticia {
+  flex-direction: row-reverse;
 }
 
 .noticia h3 {
@@ -267,55 +271,4 @@ footer .container {
 
 .copy {
   margin: 0 auto;
-}
-
-@media(max-width: 1200px) {
-  .container {
-    max-width: 992px;
-  }
-}
-
-@media(max-width: 992px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .menu-btns button{
-    height: 30px;
-    width: 70px;
-  }
-
-  .menu-links {
-    gap: 48px;
-  }
-
-  .video h1 {
-    font-size: 40px;
-  }
-
-  .equipe-titulos h2 {
-    font-size: 40px;
-  }
-
-  .equipe-titulos h3 {
-    font-size: 24px;
-  }
-
-  .contato div:first-child {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contato div p {
-    font-size: 24px;
-  }
-
-  .menu-footer ul {
-    gap: 30px;
-  }
-
-  .menu-footer a {
-    font-size: 14px;
-  }
-
 }

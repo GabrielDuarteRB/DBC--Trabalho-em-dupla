@@ -1,0 +1,100 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .menu-btns button {
+    height: 30px;
+    width: 70px;
+  }
+
+  .menu-links ul {
+    gap: 30px;
+  }
+
+  .video h1 {
+    font-size: 40px;
+  }
+
+  .equipe-titulos h2 {
+    font-size: 40px;
+  }
+
+  .equipe-titulos h3 {
+    font-size: 24px;
+  }
+
+  .contato div:first-child {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contato div p {
+    font-size: 24px;
+  }
+
+  .menu-footer ul {
+    gap: 30px;
+  }
+
+  .menu-footer a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .menu ul {
+    gap: 20px;
+  }
+
+  .menu-links {
+    gap: 30px;
+  }
+
+  .menu-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-btns button {
+    height: 24px;
+  }
+
+  .equipe-imagens {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .equipe-imagens-wrap {
+    flex-direction: column;
+  }
+
+  .noticia {
+    flex-direction: column;
+  }
+
+  .noticia-background .noticia {
+    flex-direction: column;
+  }
+
+  .menu-footer a {
+    order: -1;
+    align-self: center;
+  }
+
+  .menu-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
