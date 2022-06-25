@@ -88,6 +88,10 @@
     flex-direction: column;
   }
 
+  .contato div p {
+    text-align: center ;
+  }
+
   .menu-footer a {
     order: -1;
     align-self: center;
@@ -97,4 +101,46 @@
     flex-direction: column;
     gap: 20px;
   }
+}
+
+@media (max-width: 576px) {
+ .container {
+  max-width: 320px;
+ }
+
+ .menu {
+  gap: 30px
+ }
+
+ .menu-links {
+  align-items: center;
+ }
+
+ .menu-btns {
+  flex-direction: row;
+ }
+
+ .menu-btns button {
+  height: 32px;
+  width: 155px;
+}
+
+.artigos-wrap {
+  flex-direction: column;
+}
+
+
+.noticia img, .noticia-background img{
+  width: 320px;
+  height: 220px;
+}
+
+.equipe-imagens-wrap:last-child {
+  display: none;
+}
+
+.equipe-imagens-wrap img {
+  width: 300px;
+  height: 160px;
+}
 }
