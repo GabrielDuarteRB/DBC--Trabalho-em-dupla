@@ -7,9 +7,12 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  color: #000;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: normal;
 }
 
@@ -58,16 +61,13 @@ h1, h2, h3 {
 
 .menu {
   padding: 16px;
-  display: flex;
   background-color: #fff;
 }
 
-.menu ul {
-  display: flex;
-}
-
 .menu,
-.menu ul {
+.menu nav,
+.menu nav ul {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -111,6 +111,7 @@ h1, h2, h3 {
 .video h1 {
   margin: 80px 0 40px;
   font-size: 56px;
+  text-align: center;
 }
 
 /* Artigos */
@@ -123,13 +124,14 @@ h1, h2, h3 {
 .artigos-wrap {
   display: flex;
   padding-bottom: 120px;
+  gap: 60px;
+  justify-content: space-between;
 }
 
 .artigos {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  margin-right: 60px;
 }
 
 .artigos h3 {
@@ -199,9 +201,8 @@ h1, h2, h3 {
 /* Contato */
 
 .contato {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 120px 0;
-
 }
 
 .contato div:first-child {
@@ -216,5 +217,105 @@ h1, h2, h3 {
 .contato div:last-child {
   display: flex;
   gap: 45px;
+  align-items: center;
 }
 
+/* Footer */
+footer {
+  padding: 120px 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-footer,
+.menu-footer ul {
+  justify-content: space-between;
+  display: flex;
+}
+
+.menu-footer {
+  padding-bottom: 40px;
+}
+
+.menu-footer ul {
+  gap: 60px;
+}
+
+.menu-footer ul li a {
+  color: #000;
+  font-weight: bold;
+}
+
+.menu-footer ul li a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.redes-sociais {
+  padding: 80px 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes-sociais i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.copy {
+  margin: 0 auto;
+}
+
+@media(max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media(max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .menu-btns button{
+    height: 30px;
+    width: 70px;
+  }
+
+  .menu-links {
+    gap: 48px;
+  }
+
+  .video h1 {
+    font-size: 40px;
+  }
+
+  .equipe-titulos h2 {
+    font-size: 40px;
+  }
+
+  .equipe-titulos h3 {
+    font-size: 24px;
+  }
+
+  .contato div:first-child {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contato div p {
+    font-size: 24px;
+  }
+
+  .menu-footer ul {
+    gap: 30px;
+  }
+
+  .menu-footer a {
+    font-size: 14px;
+  }
+
+}
